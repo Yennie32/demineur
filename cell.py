@@ -11,4 +11,10 @@ class Cell :
             location, 
             text="bitch"
         )
+        # BIND IS USED TO ASSOCIATE A EVENT TO A FUNCTION
+        btn.bind("<Button-1>", self.left_click_actions) # convention in tkinter for the left click, we are only passing the reference of the function
         self.cell_btn_object = btn
+    
+    def left_click_actions(self, event): # add the event because it takes 2 positionnal arguments
+        print(event)
+        print("I am left bitch!")
