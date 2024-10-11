@@ -50,18 +50,35 @@ center_frame.place(
     y =utils.height_prct(25)
 )
 
-c1=Cell()
-c1.create_btn_object(center_frame)
-c1.cell_btn_object.place(
-    x=0,
-    y=0
-)
+# USING THE GRID METHOD TAKES THE PARENT ELEMENT HERE, CENTER FRAME, AND DIVIDES IT INTO COLUMNS AND ROWS   
+for x in range (settings.GRID_SIZE):
+    for y in range (settings.GRID_SIZE):
+        c = Cell()
+        c.create_btn_object(center_frame)
+        c.cell_btn_object.grid(
+            column = x,
+            row= y
+        )
 
 
 
 
 
+root.mainloop() # displays the window and waits for the user's action
 
+# c1=Cell()
+# c1.create_btn_object(center_frame)
+# c1.cell_btn_object.grid(
+#     column=0,
+#     row=0
+# )
+
+# c2=Cell()
+# c2.create_btn_object(center_frame)
+# c2.cell_btn_object.grid(
+#     column=0,
+#     row=1
+# )
 # BUTTON CREATION TO DELETE
 # btn1 = Button (
 #     center_frame,
@@ -71,4 +88,3 @@ c1.cell_btn_object.place(
 # btn1.place(x=0, y=0)
 
 # Run the window
-root.mainloop() # displays the window and waits for the user's action
