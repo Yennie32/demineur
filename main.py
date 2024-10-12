@@ -53,15 +53,15 @@ center_frame.place(
 # USING THE GRID METHOD TAKES THE PARENT ELEMENT HERE, CENTER FRAME, AND DIVIDES IT INTO COLUMNS AND ROWS   
 for x in range (settings.GRID_SIZE):
     for y in range (settings.GRID_SIZE):
-        c = Cell()
+        c = Cell(x, y)
         c.create_btn_object(center_frame)
         c.cell_btn_object.grid(
             column = x,
             row= y
         )
 
-
-
+print((Cell.all))
+#Cell.randomize_mines()
 
 
 root.mainloop() # displays the window and waits for the user's action
