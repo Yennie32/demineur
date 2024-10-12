@@ -68,7 +68,8 @@ class Cell :
 
 
     def show_cell(self): # checks all the cells around
-        print(f"({self.surrounded_cells_mines_length})")
+        self.cell_btn_object.configure(text = self.surrounded_cells_mines_length)
+        #print(f"({self.surrounded_cells_mines_length})")
 
         
 
