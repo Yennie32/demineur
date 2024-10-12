@@ -64,26 +64,3 @@ Cell.randomize_mines()
 
 
 root.mainloop() # displays the window and waits for the user's action
-
-# c1=Cell()
-# c1.create_btn_object(center_frame)
-# c1.cell_btn_object.grid(
-#     column=0,
-#     row=0
-# )
-
-# c2=Cell()
-# c2.create_btn_object(center_frame)
-# c2.cell_btn_object.grid(
-#     column=0,
-#     row=1
-# )
-# BUTTON CREATION TO DELETE
-# btn1 = Button (
-#     center_frame,
-#     bg="blue", #position
-#     text="first button"
-# )
-# btn1.place(x=0, y=0)
-
-# Run the window
