@@ -60,8 +60,7 @@ for x in range (settings.GRID_SIZE):
             row= y
         )
 
-print((Cell.all))
-#Cell.randomize_mines()
+Cell.randomize_mines()
 
 
 root.mainloop() # displays the window and waits for the user's action
